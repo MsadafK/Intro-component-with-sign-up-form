@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <div class="text-container">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <p class="trial-and-price">
+        <span class="trial-highlighted-text">Try it free 7 days</span> then
+        $20/mo. thereafter
+      </p>
+      <div class="form-container">
+        <form class="form" method="post" action="#">
+          <div class="input-box">
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="First Name"
+            />
+            <label for="first-name">First Name cannot be empty</label>
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Last Name"
+            />
+            <label for="first-name">Last Name cannot be empty</label>
+          </div>
+          <div class="input-box">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email Address"
+            />
+            <label for="email">Email cannot be empty</label>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+            <label for="password">Password cannot be empty</label>
+          </div>
+          <button class="trial-and-price claim-your-free-trial" type="submit">
+            CLAIM YOUR FREE TRIAL
+          </button>
+        </form>
+        <a href="#" class="terms-and-service">
+          By clicking the button, you are agreeing to our
+          <span class="terms-and-service-highlighted-text"
+            >Terms and Services</span
+          >
+        </a>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/validator@13.7.0/validator.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
